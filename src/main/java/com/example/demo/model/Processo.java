@@ -12,12 +12,11 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import jakarta.persistence.Lob;
 import jakarta.persistence.Table;
 
 @Data
 @Entity
-@Table(name = "tabela_processo")
+@Table(name = "tabela_processos")
 public class Processo implements Serializable {
 	private static final long serialVersionUID = 1L;
 
@@ -49,10 +48,10 @@ public class Processo implements Serializable {
     @Getter
     @Setter
     private String uf;
-
+/*
     @Lob
     @Column(name = "documento_pdf", nullable = false)
     @Getter
     @Setter
-    private byte[] documentoPdf;
+    private byte[] documentoPdf;*/
 }
